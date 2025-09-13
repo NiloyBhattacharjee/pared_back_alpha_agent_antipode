@@ -1,100 +1,17 @@
 [
-  {
-    "date": "2025-09-12",
-    "title": "Tesla chair dismisses concern Musk's politics depressed car sales",
-    "snippet": "Tesla board chair Robyn Denholm dismissed concerns that Elon Musk's political activity has negatively impacted vehicle sales, emphasizing that market dynamics and competition are more relevant drivers.",
-    "source": "Reuters"
-  },
-  {
-    "date": "2025-09-08",
-    "title": "Tesla market share in US drops to lowest since 2017 as competition heats up",
-    "snippet": "As of August 2025, Tesla's U.S. EV market share has dropped to about 38%, its lowest since 2017, as legacy automakers increase EV incentives and release new competing models.",
-    "source": "Reuters"
-  },
-  {
-    "date": "2025-09-02",
-    "title": "Tesla gets around 600 orders since India launch, Bloomberg News reports",
-    "snippet": "Since launching sales in India in mid-July, Tesla has received just over 600 vehicle orders. Initial deliveries will be limited, and the company faces challenges including EV infrastructure and import tariffs.",
-    "source": "Reuters"
-  },
-  {
-    "date": "2025-07-02",
-    "title": "Tesla confirms 384,000 deliveries in Q2 2025, right on expectations",
-    "snippet": "Tesla delivered 384,122 electric vehicles globally during Q2 2025, matching expectations, though down from 444,000 in Q2 2024 as market headwinds and supply pressures persist.",
-    "source": "Electrek"
-  },
-  {
-    "date": "2025-04-02",
-    "title": "Tesla First Quarter 2025 Production, Deliveries & Deployments",
-    "snippet": "In Q1 2025, Tesla produced over 362,000 vehicles, delivered over 336,000, and deployed 10.4 GWh of energy storage products across global operations.",
-    "source": "Tesla IR"
-  },
-  {
-    "date": "2025-07-23",
-    "title": "Yet another bad three months as Tesla reports its Q2 2025 results",
-    "snippet": "Tesla remains profitable but faces growing challenges: falling margins and intensifying competition from newer EV entrants are weighing on its automotive segment and battery business.",
-    "source": "Ars Technica"
-  },
-  {
-    "date": "2025-08-? (month unreleased exact day)",
-    "title": "Tesla’s easy money from regulatory credits set to dry up amid weakening profits",
-    "snippet": "A significant source of past profit—regulatory credits—is projected to decline sharply, raising concerns about margin pressures as Tesla relies more on core automotive and energy operations.",
-    "source": "Reuters"
-  }
-  ,
-  {
-    "date": "2025-09-12",
-    "title": "Tesla chair dismisses concern Musk's politics depressed car sales, Bloomberg News reports",
-    "snippet": "Tesla board chair Robyn Denholm dismissed concerns that Elon Musk's political activity has negatively impacted vehicle sales. She reaffirmed investor confidence amid rising competition from Chinese EV manufacturers and weakening demand in some markets. Investors responded positively, sending shares higher.",
-    "source": "Reuters"
-  },
-  {
-    "date": "2025-09-12",
-    "title": "Byd and Tesla set to lose most from Mexico's proposed tariffs on China",
-    "snippet": "Electric car rivals BYD and Tesla are expected to be among the hardest hit by Mexico’s proposed 50% tariff on autos imported from China, adding cost pressures and potentially disrupting trade flows for EV manufacturers operating in or exporting through that region.",
-    "source": "Reuters"
-  },
-  {
-    "date": "2025-09-11",
-    "title": "Wall Street indexes post record-high closes; Tesla and Micron rally",
-    "snippet": "Tesla rallied along with the broader markets as indexes reached record highs on inflation data and jobless claims, amid speculation that the U.S. Federal Reserve may ease interest rates soon. Shares gained despite revenue concerns.",
-    "source": "Reuters"
-  },
-  {
-    "date": "2025-09-10",
-    "title": "Tesla is losing U.S. market share. And that's in the middle of an EV boom.",
-    "snippet": "Tesla’s U.S. EV market share dropped to 38% in August 2025, down from 42% in July and significantly below its dominance from earlier years. Competitors are increasing incentives while Tesla faces regulatory and macroeconomic pressures.",
-    "source": "MarketWatch"
-  },
-  {
-    "date": "2025-08-07",
-    "title": "Tesla shuts down Dojo supercomputer team, reassigns workers amid strategic AI shift, Bloomberg News reports",
-    "snippet": "Tesla has shut down its Dojo supercomputer team and reassigned its personnel to other AI and autonomy projects. The move follows recent leadership changes and part of a broader strategy to shift priorities toward robotics and AI capabilities beyond Dojo.",
-    "source": "Reuters"
-  },
-  {
-    "date": "2025-08-04",
-    "title": "Tesla approves share award worth $29 billion to CEO Elon Musk",
-    "snippet": "Tesla’s board approved a share award valued at ~$29B to Elon Musk, designed to keep him at the helm during major transitions toward robotics and autonomous systems. The grant includes performance conditions and will vest over time.",
-    "source": "Reuters"
-  },
-  {
-    "date": "2025-06-24",
-    "title": "French investigators order Tesla to stop 'deceptive business practices'",
-    "snippet": "French investigators have told Tesla to cease deceptive practices or face substantial fines. The probes allege misleading claims around autonomous driving features, incomplete contracts, and delivery and refund terms not clearly laid out.",
-    "source": "Reuters"
-  },
-  {
-    "date": "2025-? (approx recent)",
-    "title": "Tesla to launch cheaper Model Y in China amid growing competition, report says",
-    "snippet": "Tesla plans to produce a more affordable version of its Model Y in China by 2026, in response to falling EV sales and fierce competition, with reduced pricing and cost adjustments expected.",
-    "source": "Investopedia"
-  },
-  {
-    "date": "2025-09-12",
-    "title": "Tesla scraps its wireless EV charging plans, leaving Porsche to pioneer the technology",
-    "snippet": "Despite past hints and expectations, Tesla has officially abandoned its plans for wireless charging for its EVs, citing design hurdles and impractical pad size requirements. Porsche appears positioned to lead this tech instead.",
-    "source": "TechRadar"
-  }
+  {"date": "2024-09-20", "title": "Upgrade on storage growth", "snippet": "Analyst upgrade cites strong growth in energy storage deployments and optimism on pipeline."},
+  {"date": "2024-09-16", "title": "Tariff risk in key market", "snippet": "Proposed tariffs add risk and potential delay for imported components; management monitoring developments."},
+  {"date": "2024-09-12", "title": "Recall probe update", "snippet": "Authorities continue recall investigation; added risk noted; timelines remain uncertain."},
+  {"date": "2024-09-05", "title": "Deliveries surge ahead of quarter-end", "snippet": "Regional data point to a surge in orders; mix improving; management optimism."},
+  {"date": "2024-09-01", "title": "Broker downgrade on valuation", "snippet": "Downgrade warns of valuation stretch despite strong long-term roadmap; recommends patience."},
+  {"date": "2024-08-28", "title": "Factory delay risk", "snippet": "Suppliers indicate a delay risk at a facility; management expects limited impact."},
+  {"date": "2024-08-22", "title": "Autonomy pilot expands", "snippet": "Company expands autonomy pilot in a new region; optimism around features despite regulatory scrutiny."},
+  {"date": "2024-08-18", "title": "Margin decline amid pricing", "snippet": "Pricing actions weigh on margin; near-term weak tailwinds despite efficiency work."},
+  {"date": "2024-08-10", "title": "Partnership expands on energy storage", "snippet": "Partnership expand to deploy grid-scale storage; win for interoperability and growth."},
+  {"date": "2024-08-07", "title": "Partnership expands on charging", "snippet": "Company expands partnership on charging standards; win for interoperability."},
+  {"date": "2024-08-01", "title": "Production ramp noted", "snippet": "Suppliers cite production ramp into quarter-end; risk of component delay remains modest."},
+  {"date": "2024-07-29", "title": "Investigation watch", "snippet": "Regulators provide investigation update on software features; risk monitored."},
+  {"date": "2024-07-25", "title": "Factory expansion progress", "snippet": "Construction milestones reached on factory expansion; utilization expected to improve later this year."},
+  {"date": "2024-07-19", "title": "Broker upgrade on autonomy progress", "snippet": "Upgrade highlights progress; optimism around roadmap despite risks."},
+  {"date": "2024-07-12", "title": "Loss on recall costs", "snippet": "Company records a small loss tied to recall costs; remediation underway."}
 ]
-

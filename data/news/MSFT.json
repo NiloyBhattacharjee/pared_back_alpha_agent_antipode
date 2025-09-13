@@ -1,104 +1,17 @@
 [
-  {
-    "date": "2025-09-12",
-    "title": "EU accepts Microsoft commitments to address Teams competition concerns",
-    "snippet": "The European Commission has accepted Microsoft's proposed changes to how it bundles Teams with Office apps after regulators determined the prior measures weren’t enough to ensure fair competition. Microsoft will offer Office versions without Teams at reduced prices. ",
-    "source": "Reuters"
-  },
-  {
-    "date": "2025-09-09",
-    "title": "Microsoft to use AI from Anthropic in shift from OpenAI, the Information reports",
-    "snippet": "Microsoft is expanding its AI strategy by incorporating models from Anthropic into Office 365 apps. While still using OpenAI in many products, this diversification is part of building resilience and better performance across specific workflows.",
-    "source": "Reuters"
-  },
-  {
-    "date": "2025-07-30",
-    "title": "Microsoft Cloud and AI strength fuels fourth quarter results",
-    "snippet": "Microsoft announced FY25 Q4 revenue of $76.4B, up 18% YoY, driven by strong growth in Azure (39%), Productivity & Business Processes, and More Personal Computing. Operating income and net income also showed strong gains. ",
-    "source": "Microsoft / Reuters"
-  },
-  {
-    "date": "2025-07-30",
-    "title": "Microsoft reports strong cloud earnings, with Windows and Xbox up too",
-    "snippet": "In Q4 FY2025, Microsoft saw Azure revenues grow 39% YoY. Windows OEM/device revenues rose modestly, Xbox content & services surged. Surface and device sales are still mixed. ",
-    "source": "The Verge"
-  },
-  {
-    "date": "2025-07-02",
-    "title": "Microsoft to Cut 9,000 Workers in Second Round of 2025 Layoffs",
-    "snippet": "Microsoft announced a second round of layoffs affecting about 4% of its workforce as part of cost-cutting, especially against rising costs from AI infrastructure. Margins are under pressure despite growth in cloud business. ",
-    "source": "Reuters via Inc.com"
-  },
-  {
-    "date": "2025-07-28",
-    "title": "Microsoft launches AI-based Copilot Mode in Edge browser",
-    "snippet": "A new feature called “Copilot Mode” is being added to Microsoft Edge, integrating chat, search, navigation, and background context like tab history; users can disable it, and it will be free for Windows/Mac PCs initially. ",
-    "source": "Reuters"
-  },
-  {
-    "date": "2025-01-03",
-    "title": "Microsoft plans to invest $80 billion on AI-enabled data centers in fiscal 2025",
-    "snippet": "In fiscal 2025, Microsoft plans to spend about $80B on data centers designed for AI workloads and cloud applications, with more than half the spending to be in the U.S. This is part of its push to scale infrastructure amid growing demand. ",
-    "source": "Reuters"
-  },
-  {
-    "date": "2025-09-12",
-    "title": "OpenAI to share 8% of its revenue with Microsoft, partners, The Information reports",
-    "snippet": "OpenAI is set to reduce the share of revenue given to commercial partners, including Microsoft, from 20% to about 8% over time. This could mean larger revenue retained by OpenAI but also affect Microsoft’s cost and usage models. ",
-    "source": "Reuters"
-  },
-  {
-    "date": "2025-09-13",
-    "title": "OpenAI to share 8% of its revenue with Microsoft, partners, The Information reports",
-    "snippet": "OpenAI is projected to reduce the share of its revenue distributed to commercial partners, including Microsoft, from the current 20% to approximately 8% by the end of the decade. This could increase the revenue retained by OpenAI, though terms are still being negotiated.",
-    "source": "Reuters" 
-  },
-  {
-    "date": "2025-09-12",
-    "title": "Microsoft avoids EU fine after competition probe",
-    "snippet": "Microsoft has avoided an antitrust fine by offering further concessions in how it bundles Teams with Office 365, making changes regulators have accepted as sufficient in restoring competition within the productivity software market.",
-    "source": "Financial Times" 
-  },
-  {
-    "date": "2025-09-11",
-    "title": "Microsoft, OpenAI reach non-binding deal to allow OpenAI to restructure",
-    "snippet": "Microsoft and OpenAI have entered a non-binding agreement allowing OpenAI to shift toward a for-profit corporate structure. Microsoft retains preferred access to OpenAI’s technology, though some exclusivity measures may loosen under the proposed deal.",
-    "source": "Reuters"
-  },
-  {
-    "date": "2025-09-11",
-    "title": "Microsoft is making 'significant investments' in training its own AI models",
-    "snippet": "Microsoft is ramping up efforts to build frontier AI models in-house, deploying thousands of GPUs and setting up large compute clusters. This is part of its strategy to not be entirely reliant on external AI model providers.",
-    "source": "The Verge"
-  },
-  {
-    "date": "2025-09-12",
-    "title": "Microsoft to invest $400 million in Switzerland on AI, cloud computing",
-    "snippet": "Microsoft will invest $400 million into its Swiss infrastructure to expand data centers near Geneva and Zurich, improve AI/cloud capacity, and support data-residency for sensitive sectors like health and finance.",
-    "source": "Reuters"
-  },
-  {
-    "date": "2025-09-12",
-    "title": "Microsoft starts testing new AI features in File Explorer",
-    "snippet": "In Windows 11, Microsoft is trialing new AI features in File Explorer that let users manipulate images (remove backgrounds, blur objects) directly from the file browser without opening external apps.",
-    "source": "BleepingComputer"
-  },
-  {
-    "date": "2025-09-12",
-    "title": "Microsoft to cut 3% of workforce amid rising costs from AI infrastructure",
-    "snippet": "Microsoft is set to lay off about 7,000 employees, roughly 3% of its workforce, as part of its effort to streamline costs while maintaining large investments in AI and cloud infrastructure.",
-    "source": "Reuters" 
-  },
-  {
-    "date": "2025-07-30",
-    "title": "Microsoft Cloud and AI strength fuels fourth quarter results",
-    "snippet": "Microsoft reported strong Q4 FY2025: $76.4B in revenue, up 18% YoY. Intelligent Cloud (Azure) grew ~39%, Productivity & Business Processes and Microsoft 365 showed strong gains. Return to shareholders via dividends and share repurchases was ~$9.4B.",
-    "source": "Microsoft / Reuters"
-  },
-  {
-    "date": "2025-09-12",
-    "title": "Microsoft trials redesigned Windows 11 Widgets Board with new Copilot Discover feed",
-    "snippet": "Microsoft is testing a redesigned Widgets Board in Windows 11 that introduces ‘Copilot Discover,’ an AI-powered feed on the Widgets sidebar to provide personalized content, better navigation, and in-panel reading without needing to open browser windows.",
-    "source": "Windows Central"
-  }
+  {"date": "2024-07-03", "title": "Strong enterprise win expands Azure footprint", "snippet": "Large enterprise win expands Azure deployment; customers report strong growth and partnership expand."},
+  {"date": "2024-07-10", "title": "Copilot trials raise guidance", "snippet": "Management raise guidance on Copilot seat growth; early adoption in enterprise remains strong."},
+  {"date": "2024-07-17", "title": "Regulatory probe risk persists", "snippet": "Regulators continue a probe into cloud practices; timelines uncertain; risk viewed as modest."},
+  {"date": "2024-07-24", "title": "ISV partnership win", "snippet": "Win with a major ISV; partnership expand to integrate Copilot features across apps."},
+  {"date": "2024-07-31", "title": "Outage causes service delay", "snippet": "A brief cloud outage led to service delay for some clients; remediation completed; limited loss expected."},
+  {"date": "2024-08-05", "title": "Raises outlook on durable demand", "snippet": "Management raise outlook citing durable demand for cloud and security workloads."},
+  {"date": "2024-08-12", "title": "Broker downgrade on valuation", "snippet": "Downgrade flags valuation stretch despite strong fundamentals; recommends patience on entry."},
+  {"date": "2024-08-19", "title": "Partnership expands with cloud leaders", "snippet": "New partnership expand to deploy next-gen data center hardware across regions."},
+  {"date": "2024-08-25", "title": "Azure growth remains strong", "snippet": "Channel checks cite strong growth and record backlog for Azure migrations."},
+  {"date": "2024-08-30", "title": "Windows feature update integrates Copilot", "snippet": "Windows integrates Copilot features in File Explorer; early feedback mixed but improving."},
+  {"date": "2024-09-03", "title": "Copilot seat growth accelerates", "snippet": "Enterprise trials expand; seat growth accelerates ahead of broader rollout."},
+  {"date": "2024-09-10", "title": "Antitrust risk update", "snippet": "Authorities seek further remedies on productivity bundling; company cooperation continues."},
+  {"date": "2024-09-15", "title": "Training own AI models ramps", "snippet": "Company ramps investment to train in-house AI models; reduces reliance on external providers."},
+  {"date": "2024-09-19", "title": "Upgrade on Azure strength", "snippet": "Analyst upgrade cites strong growth, record backlog, and partnership expand in enterprise."},
+  {"date": "2024-09-20", "title": "Guidance reaffirmed on cloud demand", "snippet": "Management reaffirms guidance on durable cloud demand; capex cadence maintained."}
 ]

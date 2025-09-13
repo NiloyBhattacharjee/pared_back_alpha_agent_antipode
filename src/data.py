@@ -179,14 +179,15 @@ def load_news(as_of: datetime, lookback_days: int = 120) -> pd.DataFrame:
                         items = json.load(f)
                     ticker = os.path.splitext(fn)[0].upper()
                     for it in items:
-                        d = pd.to_datetime(it.get("date"))
-                        if pd.isna(d): 
+                        # Robust parsing: coerce invalid dates to NaT and skip instead of raising
+                        d = pd.to_datetime(it.get("date"), errors="coerce")
+                        if pd.isna(d):
                             continue
                         if as_of - pd.Timedelta(days=lookback_days) <= d <= as_of:
-                            title = (it.get("title","") + " " + it.get("snippet","")).strip()
+                            title = (it.get("title", "") + " " + it.get("snippet", "")).strip()
                             rows.append({"date": d, "ticker": ticker, "headline": title})
         if rows:
-            return pd.DataFrame(rows).sort_values(["date","ticker"]).reset_index(drop=True)
+            return pd.DataFrame(rows).sort_values(["date", "ticker"]).reset_index(drop=True)
     except Exception as e:
         print(f"[NEWS] falling back due to: {e}")
     # synthetic news fallback
