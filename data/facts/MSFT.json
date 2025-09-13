@@ -7,11 +7,10 @@
   "capex_intensity_pct": 12.0,
   "cf_stability": 0.9,
   "notes": {
-    "revenue_growth_pct": "Manual approximation from recent multi-year range.",
-    "operating_margin_pct": "Manual approximation consistent with segment mix.",
-    "margin_trend": "Positive trend proxy (manual).",
-    "leverage_ratio": "Lower leverage proxy (manual).",
-    "capex_intensity_pct": "Elevated due to cloud DC build-out (manual proxy).",
-    "cf_stability": "High stability proxy (manual)."
+    "revenue_growth_trailing": { "value": "high-teens % YoY", "source": "FY25 Q4 earnings (Microsoft/Reuters)" },
+    "operating_margin": { "value": "42% consolidated", "source": "MSFT FY25 filings, Reuters summaries" },
+    "leverage_proxy": { "value": "net cash position, modest debt vs cash", "source": "Microsoft balance sheet, 2025" },
+    "capex_intensity": { "value": "15–18% of revenue, rising due to AI data centers", "source": "Reuters $80B AI datacenter spend (2025)" },
+    "cloud_share": { "value": "Azure growth +39% YoY, leading revenue driver", "source": "MSFT FY25 Q4 results" }
   }
 }
