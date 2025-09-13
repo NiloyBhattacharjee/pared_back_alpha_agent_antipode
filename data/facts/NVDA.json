@@ -1,0 +1,17 @@
+{
+  "ticker": "NVDA",
+  "revenue_growth_pct": 35.0,
+  "operating_margin_pct": 55.0,
+  "margin_trend": 0.9,
+  "leverage_ratio": 0.6,
+  "capex_intensity_pct": 7.0,
+  "cf_stability": 0.7,
+  "notes": {
+    "revenue_growth_pct": "Manual approximation reflecting high growth cycle.",
+    "operating_margin_pct": "Manual approximation consistent with recent peak margins.",
+    "margin_trend": "Strong positive trend proxy (manual).",
+    "leverage_ratio": "Lower leverage proxy (manual).",
+    "capex_intensity_pct": "Moderate capex relative to revenue (manual).",
+    "cf_stability": "Good but cyclical visibility proxy (manual)."
+  }
+}

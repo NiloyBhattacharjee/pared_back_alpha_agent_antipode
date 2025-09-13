@@ -1,0 +1,26 @@
+# Python bytecode and caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+*.egg-info/
+
+# Virtual environments
+.venv/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Outputs/artifacts (keep .gitkeep only)
+outputs/*
+!outputs/.gitkeep
+notebooks/outputs/
+
+# Data caches (local/offline convenience)
+data/prices_cache.csv
+
+# OS files
+.DS_Store
+Thumbs.db

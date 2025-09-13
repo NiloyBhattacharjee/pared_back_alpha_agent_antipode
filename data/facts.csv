@@ -1,0 +1,5 @@
+ticker,revenue_growth_pct,gross_margin_pct,operating_margin_pct,margin_trend,leverage_ratio,capex_intensity_pct,cf_stability
+AAPL,7.0,44.0,30.0,0.5,1.2,3.0,0.8
+MSFT,10.0,68.0,42.0,0.7,0.8,12.0,0.9
+NVDA,35.0,73.0,55.0,0.9,0.6,7.0,0.7
+TSLA,20.0,25.0,9.0,0.4,1.5,12.0,0.6

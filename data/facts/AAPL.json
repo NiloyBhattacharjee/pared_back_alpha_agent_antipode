@@ -1,0 +1,17 @@
+{
+  "ticker": "AAPL",
+  "revenue_growth_pct": 7.0,
+  "operating_margin_pct": 30.0,
+  "margin_trend": 0.5,
+  "leverage_ratio": 1.2,
+  "capex_intensity_pct": 3.0,
+  "cf_stability": 0.8,
+  "notes": {
+    "revenue_growth_pct": "Manual approximation (recent YoY trend range).",
+    "operating_margin_pct": "Manual approximation consistent with public filings range.",
+    "margin_trend": "Direction/trend proxy on a -1..+1 scale (manual).",
+    "leverage_ratio": "Debt/Equity proxy bucketed to ~[0.5..1.5] (manual).",
+    "capex_intensity_pct": "Capex/Revenue proxy (manual approximation).",
+    "cf_stability": "Heuristic 0..1 based on volatility/visibility (manual)."
+  }
+}
