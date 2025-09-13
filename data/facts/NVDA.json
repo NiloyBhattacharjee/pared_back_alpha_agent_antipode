@@ -1,17 +1,16 @@
-{
-  "ticker": "NVDA",
-  "revenue_growth_pct": 35.0,
-  "operating_margin_pct": 55.0,
-  "margin_trend": 0.9,
-  "leverage_ratio": 0.6,
-  "capex_intensity_pct": 7.0,
-  "cf_stability": 0.7,
-  "notes": {
-    "revenue_growth_pct": "Manual approximation reflecting high growth cycle.",
-    "operating_margin_pct": "Manual approximation consistent with recent peak margins.",
-    "margin_trend": "Strong positive trend proxy (manual).",
-    "leverage_ratio": "Lower leverage proxy (manual).",
-    "capex_intensity_pct": "Moderate capex relative to revenue (manual).",
-    "cf_stability": "Good but cyclical visibility proxy (manual)."
+  {
+    "ticker": "NVDA",
+    "revenue_growth_pct": 35.0,
+    "operating_margin_pct": 55.0,
+    "margin_trend": 0.9,
+    "leverage_ratio": 0.6,
+    "capex_intensity_pct": 7.0,
+    "cf_stability": 0.7,
+    "notes": {
+      "revenue_growth_trailing": { "value": "~69% YoY", "source": "Nvidia Q1 FY26 results (Reuters)" },
+      "operating_margin": { "value": "55–60%", "source": "Nvidia FY2025 filings" },
+      "leverage_proxy": { "value": "net cash positive, minimal debt", "source": "Nvidia balance sheet" },
+      "capex_intensity": { "value": "5–7% of revenue", "source": "Nvidia investor materials" },
+      "data_center_share": { "value": "70%+ of revenue", "source": "Q2 2025 earnings (Reuters)" }
+    }
   }
-}

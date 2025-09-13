@@ -1,21 +1,92 @@
-[
-  {"date": "2025-06-25", "title": "Record data center revenue; demand surge", "snippet": "Quarterly update flags record data center sales and a surge in AI accelerator orders; growth outlook reiterated."},
-  {"date": "2025-06-17", "title": "Export policy risk", "snippet": "Reports suggest new export rules could pose risk and potential delay for select shipments; magnitude uncertain."},
-  {"date": "2025-06-10", "title": "Upgrade on AI cycle", "snippet": "Analysts issue upgrade citing strong pipeline visibility and optimism across hyperscaler partners."},
-  {"date": "2025-06-04", "title": "Broker downgrade warns of tight supply", "snippet": "A downgrade notes cycle risk if supply remains constrained; watch channel inventory."},
-  {"date": "2025-05-27", "title": "Partnerships expand with cloud leaders", "snippet": "NVIDIA announces partnership expand on next-gen platforms with major cloud providers."},
-  {"date": "2025-05-19", "title": "Earnings beat expectations", "snippet": "Company beats consensus with strong margins; supply additions planned."},
-  {"date": "2025-05-12", "title": "Driver recall for legacy software", "snippet": "A minor recall addresses stability issues in a legacy driver; no material loss expected."},
-  {"date": "2025-05-05", "title": "Customers raise capex plans", "snippet": "Multiple customers raise capex guidance to accelerate AI deployments, supporting near-term demand."},
-  
-  {"date": "2024-09-20", "title": "Analyst upgrade on data center demand", "snippet": "Upgrade cites strong growth in accelerator backlog and optimism on multi-year roadmap."},
-  {"date": "2024-09-12", "title": "Export policy risk remains", "snippet": "Policy headlines highlight risk and potential delay for selected regions; management monitoring developments."},
-  {"date": "2024-09-05", "title": "Partnership expands with cloud leader", "snippet": "New partnership expand on next-gen platforms; customers raise commitment to AI infrastructure."},
-  {"date": "2024-08-28", "title": "Supply probe widens", "snippet": "Industry probe raises compliance questions; modest near-term risk flagged by brokers."},
-  {"date": "2024-08-19", "title": "Record quarter; raises outlook", "snippet": "Company posts record revenue and raises guidance on continued demand strength."},
-  {"date": "2024-08-07", "title": "Broker downgrade on valuation", "snippet": "Downgrade notes valuation stretch despite strong fundamentals; recommends patience on entry."},
-  {"date": "2024-07-30", "title": "AI accelerator orders surge", "snippet": "Channel checks suggest a surge in orders ahead of new platform launches."},
-  {"date": "2024-07-18", "title": "Delivery delays create risk", "snippet": "Select shipments face delay amid logistics constraints; management expects limited impact."},
-  {"date": "2024-07-09", "title": "Strong win in HPC deal", "snippet": "Company secures a win with a major HPC customer; partnership to expand deployment footprint."},
-  {"date": "2024-06-25", "title": "Miss in gaming segment; margin decline", "snippet": "Gaming unit miss drives a margin decline in the segment; outlook maintained for data center."}
+ [
+ {
+    "date": "2025-09-09",
+    "title": "Nvidia unveils AI chips for video, software generation",
+    "snippet": "Nvidia announced the upcoming release of a new AI chip, Rubin CPX, set to launch by the end of 2026 and designed for advanced workload like video generation and AI‑assisted software development. Weakness in current platforms addressed.",
+    "source": "Reuters"
+  },
+  {
+    "date": "2025-08-27",
+    "title": "Nvidia Q2 revenue surges 56% YoY to $46.7B",
+    "snippet": "Nvidia reported revenue for its second quarter ended July 27, 2025, of $46.7 billion, up 56% from a year ago, with data center demand driving growth. Whether margins can sustain the momentum is a key question.",
+    "source": "Nvidia Newsroom / Reuters"
+  },
+  {
+    "date": "2025-08-27",
+    "title": "Earnings beat expectations with strong margins",
+    "snippet": "In its latest earnings, Nvidia beat street estimates, supported by strong margins and accelerating demand for its Blackwell architecture, although inventory and export risks remain.",
+    "source": "Kiplinger / Forbes"
+  },
+  {
+    "date": "2025-08-28",
+    "title": "Guidance raises hopes despite export control concerns",
+    "snippet": "Nvidia projects strong future revenue, but export restrictions—especially around China—are cited as lingering risks by analysts.",
+    "source": "Sky News / Market Commentary"
+  },
+  {
+    "date": "2025-08-10",
+    "title": "Nvidia and AMD agree to pay 15% of China chip export revenues to US",
+    "snippet": "Nvidia and AMD will pay the U.S. government 15% of their revenues from advanced chip sales to China in exchange for export licenses, in a deal easing previous restrictions.",
+    "source": "The Guardian"
+  },
+  {
+    "date": "2025-08-19",
+    "title": "Investors cautious ahead of August 27 earnings",
+    "snippet": "With AI demand high, investors question whether the stock is overvalued. Export restrictions and forward guidance figured prominently in expectation setting.",
+    "source": "247WallStreet"
+  },
+  {
+    "date": "2025-08-24",
+    "title": "China business remains risk amid licensing shifts",
+    "snippet": "Nvidia’s business in China is constrained by export regulations, even as licensing begins under new terms—some revenue share, delays, and political risks remain.",
+    "source": "Blog / Market Commentary"
+  },
+  {
+    "date": "2025-08-27",
+    "title": "Shares dip despite earnings beat",
+    "snippet": "Despite strong financials, Nvidia shares slipped; concerns about AI chip spending bubble and growth in China weighed on sentiment post‑earnings.",
+    "source": "TechXplore / Analysis"
+  },
+  {
+    "date": "2025-09-12",
+    "title": "Nvidia stock rises on shipments using Blackwell chips",
+    "snippet": "Supermicro confirmed shipments of systems built on Nvidia’s new Blackwell Ultra chips, boosting confidence in hardware demand across AI infrastructure.",
+    "source": "Investopedia"
+  },
+  {
+    "date": "2025-09-12",
+    "title": "RTX 50‑series Super cards delayed until 2026",
+    "snippet": "Nvidia’s RTX 50 series SUPER GPUs are reportedly postponed, with expected launch now likely in early 2026, following leaks and insider reports.",
+    "source": "Tom’s Guide"
+  },
+  {
+    "date": "2025-09-11",
+    "title": "RTX 5090 prototype surfaces with 128GB VRAM",
+    "snippet": "A prototype version of the RTX 5090 with 128GB of VRAM has been spotted, exceeding standard specs, likely catering to AI workloads demanding large memory capacity.",
+    "source": "Tom’s Hardware"
+  },
+  {
+    "date": "2025-09-10",
+    "title": "Nvidia asks Samsung to double GDDR7 production",
+    "snippet": "To meet growing AI hardware demand, Nvidia has requested Samsung ramp up GDDR7 memory production significantly, especially as demand for memory bandwidth increases.",
+    "source": "PC Gamer"
+  },
+  {
+    "date": "2025-08-31",
+    "title": "AI infrastructure spending remains strong but risks grow",
+    "snippet": "Cloud providers continue heavy spending on AI infrastructure; however, geopolitical risks and margin pressures are top concerns among CFOs.",
+    "source": "Network World / Analysis"
+  },
+  {
+    "date": "2025-08-15",
+    "title": "Missed China demand expectations despite policy easing",
+    "snippet": "Even after some loosening of export restrictions, Nvidia’s China sales underperformed internal expectations, pointing to regulatory friction and local competition.",
+    "source": "Bloomberg / Market Commentary"
+  },
+  {
+    "date": "2025-08-07",
+    "title": "New GPU models target inferencing workloads",
+    "snippet": "Nvidia is planning updated GPU models optimized for AI inference, focusing on efficiency and power usage—targeting edge datacenters and enterprise deployments.",
+    "source": "Network World / Tom’s Hardware"
+  }
 ]

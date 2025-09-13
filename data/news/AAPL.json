@@ -1,20 +1,92 @@
 [
-  {"date": "2025-06-27", "title": "Apple beats revenue; services hit record", "snippet": "Apple reports strong momentum with record services revenue and iPhone growth. Management raise guidance and highlight new partnership expand plans."},
-  {"date": "2025-06-20", "title": "EU opens antitrust investigation", "snippet": "Regulators launch antitrust probe, adding risk of delay for select features in the region."},
-  {"date": "2025-06-12", "title": "iPad refresh drives demand surge", "snippet": "Channel checks point to a surge in early orders and growth in higher-end models."},
-  {"date": "2025-06-05", "title": "Supply chain watch: some components delayed", "snippet": "Vendors cite shipping delay risks tied to regional logistics; impact expected to be limited."},
-  {"date": "2025-05-29", "title": "Major bank upgrade on ecosystem strength", "snippet": "Analyst upgrade cites strong ecosystem engagement and optimism around services bundling."},
-  {"date": "2025-05-21", "title": "Accessory recall announced", "snippet": "A limited recall is issued for a legacy accessory; management does not expect a material loss."},
-  {"date": "2025-05-14", "title": "Health partnership expands", "snippet": "Apple deepens partnership with a large provider to expand health features and data integrations."},
-  {"date": "2025-05-02", "title": "Services revenue sets new record", "snippet": "Another record in services revenue underscores growth resilience despite mixed hardware cycles."},
-
-  {"date": "2024-09-20", "title": "Upgrade on ecosystem strength", "snippet": "Broker upgrade highlights strong engagement, services growth, and partnership expand across regions."},
-  {"date": "2024-09-12", "title": "Antitrust probe risks linger", "snippet": "Headlines note antitrust investigation adding regulatory risk; timelines uncertain."},
-  {"date": "2024-09-06", "title": "Services growth remains strong", "snippet": "Data points to strong record App Store spend; management maintains raised outlook."},
-  {"date": "2024-08-28", "title": "Logistics delays create risk", "snippet": "Suppliers cite shipping delay risk for select components; overall impact expected to be limited."},
-  {"date": "2024-08-18", "title": "Record developer conference momentum", "snippet": "Developers report optimism around new features; services ecosystem shows growth and partnership wins."},
-  {"date": "2024-08-07", "title": "Broker downgrade on valuation", "snippet": "Downgrade cites valuation stretch despite strong fundamentals; recommends patience on entry."},
-  {"date": "2024-07-30", "title": "Partnership expands with health provider", "snippet": "Apple expands a health partnership to raise adoption of new features in clinics."},
-  {"date": "2024-07-15", "title": "Accessory recall update", "snippet": "Recall program extended; limited loss expected; risk contained per management."},
-  {"date": "2024-07-05", "title": "Component delay watch", "snippet": "Channel notes minor delay risk ahead of seasonal launch; demand indicators remain strong."}
+  {
+    "date": "2025-09-12",
+    "title": "Apple's AI and search executive Robby Walker to leave, Bloomberg News reports",
+    "snippet": "Robby Walker, a senior executive at Apple responsible for artificial intelligence and search, is set to leave the company next month. His departure comes amid growing concerns over Apple’s slow progress in AI, including delays in its Siri upgrades and cautious rollout of its Apple Intelligence suite. ",
+    "source": "Reuters"
+  },
+  {
+    "date": "2025-09-09",
+    "title": "Apple launches slim iPhone 17 Air, new AirPods and Watch in holiday refresh",
+    "snippet": "Apple has unveiled its latest lineup of products ahead of the 2025 holiday season, focusing on innovation and performance enhancements. Headlining the release is the iPhone 17 Air, the thinnest iPhone ever at 5.6mm, starting at $999. Other updates include an upgraded standard iPhone 17 as well as new Watch and AirPods models. ",
+    "source": "Reuters"
+  },
+  {
+    "date": "2025-09-09",
+    "title": "Apple debuts thinner, $999 iPhone Air at 'awe-dropping' annual product event",
+    "snippet": "At its product event, Apple introduced the ultra-thin iPhone Air (5.6mm), the iPhone 17 Pro models, new AirPods Pro 3 and updates to the Apple Watch, along with health-oriented features like hypertension alerts and satellite connectivity. ",
+    "source": "The Guardian"
+  },
+  {
+    "date": "2025-07-31",
+    "title": "Apple Posts Better-Than-Expected Earnings as Services Revenue Hits Record High",
+    "snippet": "Apple reported $94.04B in revenue, up 10% YoY, surpassing analyst expectations. Services revenue reached an all-time high of $27.42B while iPhone and Mac sales also rose. Margins remained strong despite ongoing tariff and supply chain pressures. ",
+    "source": "Investopedia"
+  },
+  {
+    "date": "2025-07-31",
+    "title": "Apple roars back with stronger-than-expected iPhone sales and record $94 billion third-quarter revenue",
+    "snippet": "Revenue was driven by a 13% YoY increase in iPhone sales and a strong rebound in China; CEO Tim Cook noted growing investment in AI, with forward guidance suggesting continued strength. ",
+    "source": "Business Insider"
+  },
+  {
+    "date": "2025-09-12",
+    "title": "Apple plans smart glasses launch in 2026, Bloomberg News reports",
+    "snippet": "Apple is set to launch smart glasses by the end of 2026, according to Bloomberg. Prototypes are being finalized, with production expected to begin late 2025. This comes as Apple seeks new hardware categories and competitors like Meta push aggressive offerings. ",
+    "source": "Reuters"
+  },
+  {
+    "date": "2025-08-06",
+    "title": "Apple increases U.S. commitment to $600 billion, announces ambitious program",
+    "snippet": "Apple raised its U.S. investment target to $600B over 4 years under its American Manufacturing Program. Efforts will focus on components, assembly, and supply chain localization in key states. ",
+    "source": "Apple Newsroom"
+  },
+  {
+    "date": "2025-09-03",
+    "title": "Apple’s iPhone Air launch hits a snag in China",
+    "snippet": "The ultra-thin iPhone Air’s eSIM-only design ran into regulatory hurdles in China. The device’s preorder link was removed from China’s Apple site until clarity is obtained from authorities. ",
+    "source": "The Verge"
+  },
+  {
+    "date": "2025-09-10",
+    "title": "Slim iPhone Air could be a design win for Apple, analysts say",
+    "snippet": "Apple has unveiled the iPhone Air, its thinnest smartphone yet at just 5.6 mm, aiming to revitalize its iPhone lineup with a bold design shift. Debuting alongside the iPhone 17 models, it features a titanium frame, ceramic shield glass, and A19 Pro chip. Some concern remains about battery life and single-camera limitations.",
+    "source": "Reuters"
+  },
+  {
+    "date": "2025-09-09",
+    "title": "Apple launches slim iPhone 17 Air, new AirPods and Watch in holiday refresh",
+    "snippet": "Apple unveiled a new generation of the iPhone, including a sleek model dubbed iPhone 17 Air, and several other devices, as it looks to drive upgrades and spur sales ahead of the holiday shopping season. Prices largely unchanged from last year; 128 GB option dropped.",
+    "source": "Reuters"
+  },
+  {
+    "date": "2025-07-31",
+    "title": "Apple crushes Wall Street expectations as iPhone sales soar",
+    "snippet": "Apple reported a strong fiscal third quarter for 2025, significantly outperforming Wall Street expectations. Revenue reached $94.04 billion, up nearly 10% year-over-year, with iPhone sales increasing 13.5%. Tariffs and margin pressures were cited as risks.",
+    "source": "Reuters"
+  },
+  {
+    "date": "2025-08-01",
+    "title": "Apple revenue forecast beats estimates, tariff costs projected at $1.1 billion",
+    "snippet": "Apple surpassed earnings expectations in its fiscal third-quarter revenue of $94.04 billion, while warning that U.S. tariffs would add $1.1 billion in costs for the upcoming quarter. Strong sales helped offset earlier risks.",
+    "source": "Reuters"
+  },
+  {
+    "date": "2024-10-31",
+    "title": "Apple reports fourth quarter results of fiscal 2024",
+    "snippet": "Apple posted quarterly revenue of $94.9 billion, up 6 percent year over year, and diluted earnings per share of $0.97. Excluding a one-time charge, EPS was $1.64, up 12% YoY. Services revenue reached a new high. Device sales mixed.",
+    "source": "Apple Newsroom"
+  },
+  {
+    "date": "2024-08-01",
+    "title": "Apple beats earnings forecast despite decline in iPhone sales",
+    "snippet": "Apple surpassed earnings expectations in Q3 2024 with revenues rising 4.9% to $85.78 billion, despite a decline in iPhone sales and challenges in the Chinese market. The wearables segment saw a small decline.",
+    "source": "The Guardian"
+  },
+  {
+    "date": "2024-08-23",
+    "title": "Apple targets Sept. 10 debut for new iPhones, AirPods and watches, Bloomberg News reports",
+    "snippet": "Apple plans to launch its latest iPhones, watches, and AirPods on September 10, with sales beginning September 20. Analysts anticipate a strong upgrade cycle following competitive pressures especially in AI and software.",
+    "source": "Reuters"
+  }
 ]

@@ -7,11 +7,10 @@
   "capex_intensity_pct": 3.0,
   "cf_stability": 0.8,
   "notes": {
-    "revenue_growth_pct": "Manual approximation (recent YoY trend range).",
-    "operating_margin_pct": "Manual approximation consistent with public filings range.",
-    "margin_trend": "Direction/trend proxy on a -1..+1 scale (manual).",
-    "leverage_ratio": "Debt/Equity proxy bucketed to ~[0.5..1.5] (manual).",
-    "capex_intensity_pct": "Capex/Revenue proxy (manual approximation).",
-    "cf_stability": "Heuristic 0..1 based on volatility/visibility (manual)."
+    "revenue_growth_trailing": { "value": "mid-single-digit positive", "source": "Apple Q3 2025 earnings (Reuters/Investopedia)" },
+    "operating_margin": { "value": "around 29%", "source": "Apple 2025 earnings call summary, approximation from Reuters" },
+    "leverage_proxy": { "value": "net cash position, low leverage", "source": "Apple balance sheet, widely reported (Reuters/Bloomberg)" },
+    "capex_intensity": { "value": "~4% of revenue", "source": "Apple FY2024 annual report, scaled to recent revenue" },
+    "services_share": { "value": "record high, ~30% of revenue", "source": "Q3 2025 results (Investopedia)" }
   }
 }

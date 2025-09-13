@@ -1,17 +1,16 @@
-{
-  "ticker": "TSLA",
-  "revenue_growth_pct": 20.0,
-  "operating_margin_pct": 9.0,
-  "margin_trend": 0.4,
-  "leverage_ratio": 1.5,
-  "capex_intensity_pct": 12.0,
-  "cf_stability": 0.6,
-  "notes": {
-    "revenue_growth_pct": "Manual approximation reflecting decelerating but positive growth.",
-    "operating_margin_pct": "Manual approximation near recent reported range.",
-    "margin_trend": "Slightly positive to stable (manual).",
-    "leverage_ratio": "Higher leverage proxy (manual).",
-    "capex_intensity_pct": "Higher capex for capacity expansion (manual).",
-    "cf_stability": "Moderate stability proxy (manual)."
+  {
+    "ticker": "TSLA",
+    "revenue_growth_pct": 20.0,
+    "operating_margin_pct": 9.0,
+    "margin_trend": 0.4,
+    "leverage_ratio": 1.5,
+    "capex_intensity_pct": 12.0,
+    "cf_stability": 0.6,
+    "notes": {
+      "revenue_growth_trailing": { "value": "flat to slightly negative YoY", "source": "Tesla Q2 2025 deliveries (Reuters/Electrek)" },
+      "operating_margin": { "value": "single-digit, ~9%", "source": "Ars Technica/Reuters" },
+      "leverage_proxy": { "value": "net cash positive, low financial leverage", "source": "Tesla IR filings" },
+      "capex_intensity": { "value": ">10% of revenue", "source": "Tesla energy/storage expansion commentary, 2025" },
+      "regulatory_credit_share": { "value": "<5% of profits, declining", "source": "Reuters August 2025" }
+    }
   }
-}
