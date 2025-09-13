@@ -100,7 +100,7 @@ def load_prices(as_of: datetime, lookback_days: int = 200, forward_days: int = 2
         except Exception as e:
             print(f"[REST] falling back due to: {e}")
 
-    # --- CACHE path (offline support) ---
+    # --- CACHE path (offline support; required fallback) ---
     here = os.path.dirname(os.path.dirname(__file__))
     cache_path = os.path.join(here, "data", "prices_cache.csv")
     if os.path.exists(cache_path):
@@ -130,12 +130,16 @@ def load_prices(as_of: datetime, lookback_days: int = 200, forward_days: int = 2
                 df.attrs["source"] = "cache"
                 return df
         except Exception as e:
-            print(f"[CACHE] failing over to synthetic due to: {e}")
+            raise RuntimeError(
+                f"Failed to load prices from cache at {cache_path}: {e}. Synthetic fallback is disabled."
+            )
 
-    # --- synthetic fallback (deterministic) ---
-    df = generate_synthetic_prices(UNIVERSE, as_of, lookback_days, forward_days)
-    df.attrs["source"] = "synthetic"
-    return df
+    # --- No cache and API not used: fail clearly (synthetic disabled) ---
+    raise RuntimeError(
+        "No API data and no cache found at data/prices_cache.csv. "
+        "Create a cache online with `python run.py --as-of YYYY-MM-DD --forward-days N --write-cache`, "
+        "or configure the API via FINANCIALDATASETS_API_KEY. Synthetic fallback has been disabled per configuration."
+    )
 
 def generate_synthetic_prices(universe: List[str], as_of: datetime,
                               lookback_days: int = 300, forward_days: int = 21, seed: int = 7) -> pd.DataFrame:
