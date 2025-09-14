@@ -108,3 +108,76 @@ Data fetch window
   - `leverage_ratio`: Debt/equity style proxy; lower indicates less leverage
   - `capex_intensity_pct`: Capex/Revenue proxy; higher implies heavier capital requirements
   - `cf_stability`: Cash flow stability heuristic on 0..1
+
+## Detailed Guide (formerly docs/GUIDE.md)
+
+### Quick Setup (venv)
+
+- Windows PowerShell
+  - `python -m venv .venv`
+  - `.\\.venv\\Scripts\\Activate.ps1`
+  - `python -m pip install -r requirements.txt`
+
+- macOS/Linux
+  - `python3 -m venv .venv`
+  - `source .venv/bin/activate`
+  - `pip install -r requirements.txt`
+
+Run the CLI: `python run.py --as-of 2025-07-01 --forward-days 63`
+
+### Data Sources and Fallbacks
+
+`src/data.py:load_prices` fetches prices in the following order:
+1) REST API (`financialdatasets.ai`) when `FINANCIALDATASETS_API_KEY` is set and `USE_FINANCIALDATASETS != 0`.
+2) Local cache CSV at `data/prices_cache.csv` (offline-friendly).
+
+The loader tags the result with `df.attrs["source"]` as `api` or `cache`.
+
+Create a cache file for offline runs:
+- CLI: `python run.py --as-of 2025-07-01 --forward-days 21 --write-cache`
+
+### Running
+
+- CLI: `python run.py --as-of YYYY-MM-DD --forward-days N [--write-cache]`
+  - Writes outputs to `outputs/` (`picks.csv`, `performance.csv`, `performance_summary.csv`, `equity_curve.png`).
+  - If the API has insufficient forward days, the runner may backshift `as_of` and will print the adjusted date. Use `--strict-as-of` to fail instead of shifting.
+
+### Components and Math (Concise)
+
+Backtest math (leakage-safe):
+- Per-ticker daily return on date `d`: `r_i(d) = P_i(d) / P_i(d-1) - 1`.
+- Benchmark (equal-weight): `r_bench(d) = mean_i r_i(d)` across all four tickers.
+- Portfolio (equal-weight across BUY set `B`): `r_port(d) = sum_{i in B} w_i r_i(d)`, `w_i = 1/|B|`.
+- Active return: `r_active(d) = r_port(d) - r_bench(d)`.
+- Cumulative curves: `cum_x(d) = product (1 + r_x)` over the forward window.
+- Sharpe-style proxy: `mean(r_active) / std(r_active)` (population std, ddof=0).
+
+Leakage controls:
+- Agents compute scores using data filtered to `date <= as_of`.
+- Forward returns start strictly after `as_of`.
+
+### Code references
+- Benchmark: `src/backtest.py:27`
+- Backtest runner: `src/backtest.py:59`
+- Coordinator: `src/coordinator.py`
+- Agents: `src/agents.py`
+
+### Data Files
+
+- News/Sentiment: place curated items at `data/news/<TICKER>.json` with fields `title`, `snippet`, `date` (ISO). The agent uses only dates `<= as_of` within the lookback.
+- Facts: per-ticker JSONs at `data/facts/<TICKER>.json` (preferred) or a consolidated `data/facts.csv`. See `src/data.py:load_facts` for loader behavior.
+- Price cache (offline): `data/prices_cache.csv` with columns `date,ticker,adj_close`.
+
+### What Was Done (This Iteration)
+
+- Added `ValuationMomentumAgent` and integrated it into the runner.
+- Added transparent news sentiment with local JSONs and optional VADER blending.
+- Added per-ticker factsheets (JSON preferred; CSV fallback) and clarified quality weights.
+- Simplified the backtest and documented the math and leakage controls inline.
+- Implemented a cache fallback for prices and `--write-cache` in the CLI.
+- Removed notebook dependency; CLI remains the primary entrypoint.
+
+### Troubleshooting
+
+- Recent `--as-of` dates may lack forward prices. The CLI will backshift as needed or use a partial forward window and will print what it used (or fail with `--strict-as-of`).
+- If you see only zeros, ensure the forward window has data (pick an earlier `as_of`) and that your news items fall within the lookback window.
