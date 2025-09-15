@@ -1,6 +1,6 @@
-# Antipode: Minimal Multi-Agent Equity Views and Backtest
+# Minimal Multi-Agent Equity Views and Backtest
 
-Antipode is a tiny, transparent, leakage-safe multi-agent system that issues BUY/HOLD/SELL views on a fixed US equity universe (AAPL, MSFT, NVDA, TSLA) and evaluates those views in a lightweight backtest.Check docs for detailed break down of project 
+The pared_back_alpha_agent_antipode is a tiny, transparent, leakage-safe multi-agent system that issues BUY/HOLD/SELL views on a fixed US equity universe (AAPL, MSFT, NVDA, TSLA) and evaluates those views in a lightweight backtest.Check docs for detailed break down of project 
 
 ## Setup
 ## Quick Setup (venv)
