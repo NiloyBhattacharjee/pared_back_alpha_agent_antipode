@@ -2,14 +2,27 @@
 
 Antipode is a tiny, transparent, leakage-safe multi-agent system that issues BUY/HOLD/SELL views on a fixed US equity universe (AAPL, MSFT, NVDA, TSLA) and evaluates those views in a lightweight backtest.
 
-## Setup
+### Quick Setup (venv)
 
+- Windows PowerShell
+  - `python -m venv .venv`
+  - `.\\.venv\\Scripts\\Activate.ps1`
+  - `python -m pip install -r requirements.txt`
+
+- macOS/Linux
+  - `python3 -m venv .venv`
+  - `source .venv/bin/activate`
+  - `pip install -r requirements.txt`
 - Requirements: Python 3.9+, `pip`
 - Install deps: `pip install -r requirements.txt`
 - Optional data provider: `financialdatasets.ai`
   - REST setup (recommended):
     - `pip install -r requirements.txt` (includes `requests`)
     - Set API key via env:
+      - Env var examples:
+    - macOS/Linux: `export FINANCIALDATASETS_API_KEY=YOUR_KEY`
+    - Windows PowerShell: `$env:FINANCIALDATASETS_API_KEY = "YOUR_KEY"`
+    - Disable API: `export USE_FINANCIALDATASETS=0` or `$env:USE_FINANCIALDATASETS = "0"`
       - macOS/Linux: `export FINANCIALDATASETS_API_KEY=YOUR_KEY`
       - Windows PowerShell: `$env:FINANCIALDATASETS_API_KEY = "YOUR_KEY"`
     - Endpoint URL (optional): `FD_PRICES_URL` (e.g., `https://api.financialdatasets.ai/prices/daily`)
@@ -89,11 +102,6 @@ Data fetch window
 
 ## AI-Tool Usage
 - Project scaffolded with an AI assistant; logic and thresholds are explicitly coded for transparency.
-  - Env var examples:
-    - macOS/Linux: `export FINANCIALDATASETS_API_KEY=YOUR_KEY`
-    - Windows PowerShell: `$env:FINANCIALDATASETS_API_KEY = "YOUR_KEY"`
-    - Disable API: `export USE_FINANCIALDATASETS=0` or `$env:USE_FINANCIALDATASETS = "0"`
-
 ## News Scoring Rationale
 - Transparent lexicon counts positive/negative terms in `title + snippet`.
 - If `vaderSentiment` is installed, we compute VADER compound per headline and average it 50/50 with lexicon.
@@ -108,22 +116,6 @@ Data fetch window
   - `leverage_ratio`: Debt/equity style proxy; lower indicates less leverage
   - `capex_intensity_pct`: Capex/Revenue proxy; higher implies heavier capital requirements
   - `cf_stability`: Cash flow stability heuristic on 0..1
-
-## Detailed Guide (formerly docs/GUIDE.md)
-
-### Quick Setup (venv)
-
-- Windows PowerShell
-  - `python -m venv .venv`
-  - `.\\.venv\\Scripts\\Activate.ps1`
-  - `python -m pip install -r requirements.txt`
-
-- macOS/Linux
-  - `python3 -m venv .venv`
-  - `source .venv/bin/activate`
-  - `pip install -r requirements.txt`
-
-Run the CLI: `python run.py --as-of 2025-07-01 --forward-days 63`
 
 ### Data Sources and Fallbacks
 
