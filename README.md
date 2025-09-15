@@ -109,6 +109,21 @@ Data fetch window
   - `capex_intensity_pct`: Capex/Revenue proxy; higher implies heavier capital requirements
   - `cf_stability`: Cash flow stability heuristic on 0..1
 
+## Time Accounting (within 20 hours)
+
+- Repo setup + venv + wiring: ~1.0h
+- Price loader + cache fallback (API→cache, normalize/merge writer): ~2.0h
+- Agents (Momentum/Valuation, News, Fundamentals): ~4.0h
+- Coordinator (weights, tie‑breaks, audit columns): ~1.0h
+- Backtest (benchmark, portfolio, metrics, chart): ~3.0h
+- CLI integration + outputs (CSV/PNG, flags incl. strict‑as‑of): ~1.5h
+- Curated news JSONs (4 tickers × 15 items, ISO dates): ~3.0h
+- Tests (loader, backtest math, agents, coordinator): ~2.0h
+- Docs (README merge, usage, math, troubleshooting): ~1.0h
+- Hardening/robustness (date coercion, edge handling): ~1.5h
+
+Total: ~20.0 hours
+
 ## Detailed Guide (formerly docs/GUIDE.md)
 
 ### Quick Setup (venv)
