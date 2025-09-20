@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.git/
+.gitignore
+notebooks/
+outputs/*
+!outputs/.gitkeep
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+Thumbs.db
+.DS_Store

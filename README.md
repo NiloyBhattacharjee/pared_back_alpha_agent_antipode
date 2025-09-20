@@ -23,7 +23,7 @@ The pared_back_alpha_agent_antipode is a tiny, transparent, leakage-safe multi-a
     - Set API key via env:
       - macOS/Linux: `export FINANCIALDATASETS_API_KEY=YOUR_KEY`
       - Windows PowerShell: `$env:FINANCIALDATASETS_API_KEY = "YOUR_KEY"`
-    - Endpoint URL (optional): `FD_PRICES_URL` (e.g., `https://api.financialdatasets.ai/prices/daily`)
+    - Endpoint URL (optional): `FD_PRICES_URL` (e.g., `https://api.financialdatasets.ai/prices`)
     - Ensure API is enabled (default): `USE_FINANCIALDATASETS` unset or not "0"
   - Fallback order when fetching prices:
     1) financialdatasets.ai (tight window; enough lookback for indicators + forward window for backtest)
