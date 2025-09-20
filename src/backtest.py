@@ -96,7 +96,7 @@ class Backtester:
                     port = pd.DataFrame(columns=["portfolio_return"])  # need at least 2 points per ticker
                 else:
                     sub["weight"] = sub["ticker"].map(w)
-                    port = sub.groupby("date").apply(lambda g: (g["ret"] * g["weight"]).sum())
+                    port = sub.groupby("date").apply(lambda g: (g["ret"] * g["weight"]).sum(), include_groups=False)
                     if isinstance(port, pd.Series):
                         port = port.rename("portfolio_return").to_frame()
                     else:
@@ -131,3 +131,4 @@ class Backtester:
             }
         )
         return perf, summary
+

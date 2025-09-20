@@ -70,7 +70,7 @@ class MomentumAgent:
                 return np.nan
             return float(r) / float(vol)
 
-        scores = df.groupby("ticker").apply(_calc)
+        scores = df.groupby("ticker").apply(_calc, include_groups=False)
         return scores
 
     def rate(self, prices: pd.DataFrame, as_of: datetime) -> Tuple[pd.Series, pd.Series]:
@@ -131,7 +131,7 @@ class ValuationMomentumAgent:
         """
         df = prices.copy()
         # compute components per ticker
-        comps = df.groupby("ticker").apply(lambda g: pd.Series(self._per_ticker_components(g, as_of), index=["mom", "val"]))
+        comps = df.groupby("ticker").apply(lambda g: pd.Series(self._per_ticker_components(g, as_of), index=["mom", "val"]), include_groups=False)
         # z-score across available tickers for each component
         def zscore(s: pd.Series) -> pd.Series:
             mu = s.mean(skipna=True)
@@ -280,3 +280,4 @@ class FundamentalAgent:
         s = self.score(facts)
         ratings = s.apply(lambda x: _to_rating(x, 0.3, -0.3))
         return s, ratings
+
