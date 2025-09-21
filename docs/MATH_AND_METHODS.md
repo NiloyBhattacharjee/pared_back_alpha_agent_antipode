@@ -172,7 +172,7 @@ This document explains the math and logic used across the Antipode pipeline: dat
 
 ---
 
-## Algorithms (Step‑By‑Step)
+## Algorithm
 
 Below are concise algorithms for each major component. Pseudocode is implementation‑faithful to the Python code.
 
