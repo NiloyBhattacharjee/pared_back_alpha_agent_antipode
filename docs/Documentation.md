@@ -80,7 +80,8 @@ This document explains the math and logic used across the Antipode pipeline: dat
 - Composite score:
   - `s = 0.30*g + 0.30*margin + 0.15*trend + 0.10*(-leverage) + 0.05*(-capex) + 0.10*cf`.
 - Rating: thresholds `+0.3/-0.3`.
-Where:
+
+-Where:
 	•	g: Revenue growth z-score — Higher is better.
 	•	margin: Operating margin or gross margin z-score — Indicates profitability.
 	•	trend: Margin trend z-score — Are margins improving?
