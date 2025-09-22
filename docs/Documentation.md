@@ -83,7 +83,7 @@ This document explains the math and logic used across the Antipode pipeline: dat
   -	leverage: Leverage ratio z-score (inverted) — Lower leverage is preferred.
   -	capex: CapEx intensity z-score (inverted) — Lower spending relative to revenue is preferred.
   -	cf: Cash flow stability z-score — More stable = better.
--Normalize each feature via z‑score; invert leverage and capex since lower is better: `-z(leverage)`, `-z(capex)`.
+- Normalize each feature via z‑score; invert leverage and capex since lower is better: `-z(leverage)`, `-z(capex)`.
 - Composite score:
   - `s = 0.30*g + 0.30*margin + 0.15*trend + 0.10*(-leverage) + 0.05*(-capex) + 0.10*cf`.
 - Rating: thresholds `+0.3/-0.3`.
