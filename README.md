@@ -42,6 +42,40 @@ Outputs (written to `outputs/`):
 - `performance.csv`: daily portfolio vs benchmark returns, active, cumulative series; summary metrics appended
 - `equity_curve.png`: growth of $1, portfolio vs benchmark
 
+### Optional: ML agents
+You can enable ML-based agents if model artifacts exist (they fall back to rule-based scores if artifacts are missing):
+
+```
+python run.py --as-of 2025-09-10 --forward-days 21 --momo-agent ml --fund-agent ml
+```
+
+### Train ML models (from cache)
+Requires scikit-learn and joblib (included in requirements.txt). Ensure `data/prices_cache.csv` exists.
+
+```
+# Train price-based model -> artifacts/price_model.pkl
+python scripts/train_price_ml.py --forward-days 21
+
+# Train fundamentals-based model -> artifacts/fund_model.pkl
+python scripts/train_fund_ml.py --forward-days 21
+```
+
+Both scripts use the equal-weight benchmark active return as target and a simple Ridge regression with TimeSeriesSplit to select alpha.
+
+### Optional: LangChain news agent (RAG)
+Enable a LangChain-based news agent that retrieves the most relevant headlines per ticker and (optionally) asks an LLM to produce a sentiment score in [-1, 1]. Falls back to the lexicon path if dependencies or keys are missing.
+
+```
+python run.py --as-of 2025-09-10 --forward-days 21 --news-agent langchain
+```
+
+Optional dependencies (install only if needed):
+- langchain, langchain-community, sentence-transformers, faiss-cpu
+- langchain-openai (if you want LLM scoring). Provide `OPENAI_API_KEY`.
+
+Notes:
+- If `faiss-cpu` wheels aren’t available for your OS/Python, the agent will automatically fall back to a simple recency-based retrieval.
+
 ## Testing
 
 - Install pytest: `python -m pip install pytest`
@@ -127,3 +161,30 @@ Data fetch window
 - Docs (README merge, usage, math, troubleshooting): ~1.0h
 - Hardening/robustness (date coercion, edge handling): ~1.5h
 Total: ~20.0 hours
+
+## Extras
+
+### Choose momentum flavor (rule-based)
+By default, the rule-based momentum leg uses the composite valuation+momentum agent. You can switch to simple momentum:
+
+```
+# Composite valuation + momentum (default)
+python run.py --as-of 2025-09-10 --momo-agent rule --momo-rule val
+
+# Simple momentum only
+python run.py --as-of 2025-09-10 --momo-agent rule --momo-rule simple
+
+# ML momentum (PriceMLAgent)
+python run.py --as-of 2025-09-10 --momo-agent ml
+```
+
+### LangGraph runner (optional)
+Run the same pipeline via a LangGraph state machine (parallel scoring, optional checkpoints). Requires `langgraph` package.
+
+```
+python run_graph.py --as-of 2025-09-10 --forward-days 21 \
+  --news-agent lexicon --momo-agent rule --momo-rule val
+
+# With SQLite checkpoints (resume capability)
+python run_graph.py --as-of 2025-09-10 --checkpoints checkpoints.sqlite
+```

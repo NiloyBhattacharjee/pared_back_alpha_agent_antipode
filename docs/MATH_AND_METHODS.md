@@ -141,7 +141,31 @@ This document explains the math and logic used across the Antipode pipeline: dat
   - `outputs/picks.csv`: agent scores/ratings and final consensus per ticker.
   - `outputs/performance.csv`: daily `benchmark_return`, `portfolio_return`, `active_return`, and cumulative series.
   - `outputs/performance_summary.csv`: `buy_count`, `sharpe_proxy`, `total_active`.
-- `outputs/equity_curve.png`: “Growth of $1” for portfolio vs benchmark over the window.
+  - `outputs/equity_curve.png`: “Growth of $1” for portfolio vs benchmark over the window.
+
+### Output Columns
+- `picks.csv`
+  - `ticker`: symbol.
+  - `fund_score` / `momo_score` / `news_score`: numeric agent scores (already normalized/composite; higher is better).
+  - `fund_rating` / `momo_rating` / `news_rating`: each agent’s BUY/HOLD/SELL derived from its score.
+  - `final_score`: weighted average of available scores (fund 0.4, momentum 0.4, news 0.2; weights re‑normalized if a leg is missing).
+  - `final_rating`: consensus rating from `final_score` with HOLD tie‑breaks (majority; if still tied → Fundamentals > Momentum > News).
+
+- `performance.csv`
+  - `date`: business day in the forward window (starts next business day after `as_of`).
+  - `benchmark_return`: equal‑weight daily return across the full universe.
+  - `portfolio_return`: daily return of the fixed BUY basket (equal‑weighted).
+  - `active_return`: `portfolio_return - benchmark_return`.
+  - `cum_benchmark`: cumulative growth of $1 for the benchmark = cumprod(1 + `benchmark_return`).
+  - `cum_portfolio`: cumulative growth of $1 for the portfolio = cumprod(1 + `portfolio_return`).
+  - Note: A blank line is appended after the daily rows, followed by a small `metric,value` block identical to `performance_summary.csv`.
+
+- `performance_summary.csv`
+  - `metric`: summary metric name.
+  - `value`: numeric value. Metrics included:
+    - `buy_count`: number of BUY tickers held in the portfolio.
+    - `sharpe_proxy`: mean(active) / std(active) using population std (ddof=0).
+    - `total_active`: sum of daily active returns over the window.
 
 ---
 
@@ -289,4 +313,3 @@ Performance:
 - Broader backtest checks: drawdown, turnover, and no‑lookahead under multiple decision dates.
 - News/VADER integration tests gated by optional dependency.
 - CLI workflow tests (subprocess) that verify outputs in `outputs/` for a fixed `--as-of` using cache data.
-

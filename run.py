@@ -24,13 +24,51 @@ def main():
         action="store_true",
         help="Fail if not enough forward business days exist after as_of (disables auto-backshift/fallback)",
     )
+    parser.add_argument(
+        "--news-agent",
+        choices=["lexicon", "langchain"],
+        default="lexicon",
+        help="Use simple lexicon/VADER (lexicon) or LangChain-based retrieval (langchain) for news",
+    )
+    parser.add_argument(
+        "--momo-agent",
+        choices=["rule", "ml"],
+        default="rule",
+        help="Use rule-based ValuationMomentumAgent or ML PriceMLAgent",
+    )
+    parser.add_argument(
+        "--momo-rule",
+        choices=["val", "simple"],
+        default="val",
+        help="When --momo-agent=rule: choose composite valuation+momentum ('val') or simple momentum ('simple')",
+    )
+    parser.add_argument(
+        "--fund-agent",
+        choices=["rule", "ml"],
+        default="rule",
+        help="Use rule-based FundamentalAgent or ML FundamentalMLAgent",
+    )
     args = parser.parse_args()
 
     as_of = datetime.strptime(args.as_of, "%Y-%m-%d").replace(hour=0, minute=0, second=0, microsecond=0) if args.as_of else datetime.today()
 
     # Data: fetch tight window (lookback sized for indicators + buffer; include forward days)
-    # Valuation/Momentum (price-only) agent
-    momo = ValuationMomentumAgent()
+    # Agents (selectable)
+    use_ml_momo = args.momo_agent == "ml"
+    use_ml_fund = args.fund_agent == "ml"
+
+    if use_ml_momo:
+        try:
+            from src.agents_ml import PriceMLAgent
+
+            momo = PriceMLAgent()
+        except Exception:
+            momo = ValuationMomentumAgent()
+    else:
+        if args.momo_rule == "simple":
+            momo = MomentumAgent()
+        else:
+            momo = ValuationMomentumAgent()
     # Ensure enough lookback for momentum plus some buffer
     lookback_days = max(momo.lookback_days + 30, 150)
     prices = load_prices(as_of, lookback_days=lookback_days, forward_days=args.forward_days)
@@ -77,8 +115,24 @@ def main():
     facts = load_facts()
 
     # Agents
-    news_agent = NewsSentimentAgent()
-    fund = FundamentalAgent()
+    if args.news_agent == "langchain":
+        try:
+            from src.agents_langchain import LangChainNewsAgent
+
+            news_agent = LangChainNewsAgent()
+        except Exception:
+            news_agent = NewsSentimentAgent()
+    else:
+        news_agent = NewsSentimentAgent()
+    if use_ml_fund:
+        try:
+            from src.agents_ml import FundamentalMLAgent
+
+            fund = FundamentalMLAgent()
+        except Exception:
+            fund = FundamentalAgent()
+    else:
+        fund = FundamentalAgent()
 
     momo_s, momo_r = momo.rate(prices, as_of)
     news_s, news_r = news_agent.rate(news, as_of)
