@@ -110,6 +110,15 @@ Agents (simple, auditable rules):
 - Scoring: weighted sum of normalized features; leverage and capex intensity penalized
 - Rating thresholds: > +0.3 BUY, < -0.3 SELL, else HOLD
 
+#### Fundamental Agent Options (advanced)
+- Normalization: `norm_method` in {`z`, `winsor_z`, `rank`, `industry_z`}; for `industry_z`, provide `group_col` (e.g., `sector`).
+- Configurable weights:
+  - Pass a dict via `weights={"revenue_growth_pct":0.3, ...}` or provide a YAML/JSON file via `weights_path`.
+  - Optional `extra_feature_weights` to include additional signals when present (e.g., `{"rd_intensity": 0.05, "roic": 0.05}`).
+- Missing data handling: `reweight_missing=True` rebalances per ticker across available features; `coverage_reweight=True` downweights sparse features across the universe.
+- Expanded signals (if columns exist in facts): `rd_intensity` (R&D/Revenue), `fcf_margin`, `fcf_margin_trend`, `roic`, `revenue_volatility` (lower better), `earnings_stability` (higher better), `debt_to_equity`.
+- Optional learning helpers: `fit_weights_ols(X, y)` or `fit_weights_pca(X)` to derive data-driven weights.
+
 Coordinator
 - Map ratings to numeric: BUY=+1, HOLD=0, SELL=-1
 - Weights: Fundamentals 0.4, Val/Mom 0.4, News 0.2
